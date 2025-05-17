@@ -1,0 +1,209 @@
+@font-face {
+    font-family: Balmore;
+    src: url(fonts/Balmore.otf);
+}
+@font-face {
+  font-family: asimilate;
+  src: url(fonts/asimilates-Regular.ttf);
+}
+*,html{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+  background-color: #0f101a;
+}
+    
+.right {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; 
+  width: 100%; 
+}
+
+.right a {
+  font-family: asimilate;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem; 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+nav {
+    background-color: #1b1d2d;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.125rem;
+    height: 5rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+h1{
+    position: absolute;
+    left:750px;
+    top:120px;
+    font-size: 48px;
+    color:white;
+
+}
+.video{
+    position: absolute;
+    top: 280px;
+    left:250px;
+    animation-duration: 2s;
+    box-shadow:  0 20px 40px rgba(0, 0, 0, 0.3);
+    animation-name: opacite;
+}
+@keyframes opacite{
+    0% {
+        opacity: 0%;
+        top: 280px;
+        left: 0px;
+    }
+    100%{
+        opacity: 100%;
+        top: 280px;
+        left: 250px;
+    }
+}
+p{
+    position: absolute;
+    left:950px;
+    font-size: 25px;
+    margin-right: 25px;
+    font-family: asimilate;
+    top:280px;
+    color:white;
+    animation-duration: 2s;
+    animation-name: opacitetexte;
+}
+.duree{
+    position: absolute;
+    left:950px;
+    font-size: 25px;
+    margin-right: 25px;
+    font-family: asimilate;
+    top:530px;
+    color:white;
+    font-style: italic;
+    animation-duration: 3s;
+    animation-name: opacitetexte2;
+
+}
+@keyframes opacitetexte{
+    0% {
+        opacity: 0%;
+        top: 280px;
+        left: 1920px;
+    }
+    100%{
+        opacity: 100%;
+        top: 280px;
+        left: 950px;
+    }
+}
+@keyframes opacitetexte2{
+    0% {
+        opacity: 0%;
+        top: 530px;
+        left: 1920px;
+    }
+    75%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        top: 530px;
+        left: 950px;
+    }
+}
+@keyframes opacitetexte3{
+    0% {
+        opacity: 0%;
+        top: 580px;
+        left: 1920px;
+    }
+    75%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        top: 580px;
+        left: 950px;
+    }
+}
+@keyframes opaciteimg{
+    0% {
+        opacity: 0%;
+        top: 565px;
+        left: 1350px;
+    }
+
+    75%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 565px;
+        left: 1350px;
+    }
+}
+h2{
+    position: absolute;
+    left:950px;
+    top: 580px;
+    color:white;
+    font-style: italic;
+    animation-duration: 3.5s;
+    animation-name: opacitetexte3;
+
+}
+img  {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:1350px;
+    top:565px;
+    animation-duration: 5s;
+    animation-name: opaciteimg;
+  }
+a h6{
+    position: absolute;
+    left:50%;
+    top:820px;
+    transform: translateX(-50%);
+    color:white;
+    font-size: 12px;
+    text-decoration: underline;
+    animation-duration: 9s;
+    animation-name: comeback;
+}
+@keyframes comeback{
+    0% {
+        opacity: 0%;
+        left:50%;
+        top:820px;
+        transform: translateX(-50%);
+    }
+
+    75%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        left:50%;
+        top:820px;
+        transform: translateX(-50%);
+    }
+}

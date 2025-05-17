@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Firmino Pedro</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="videos&fichiers/Composition 1.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="menu-toggle">&#9776;</div>
+
+        <div class="right">
+            <a href="#about">A propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#competences">Compétences</a>
+            <a href="#contact">Contact</a>
+            <div class="bouton">
+                <a href="videos&fichiers/CV Pedro.pdf" download="CVpedro.pdf" target="_blank">Télécharger CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Video Block -->
+    <div class="bloc">
+        <video autoplay muted loop>
+            <source src="videos&fichiers/Composition 1.mp4" type="video/mp4" />
+        </video>
+        <video autoplay muted loop class="videonom">
+            <source src="videos&fichiers/0000.webm" type="video/webm" />
+        </video>
+    </div>
+
+    <!-- Section: About -->
+    <section id="about">
+        <h1 class="aproposdemoi">À propos de moi</h1>
+        <div class="contenu-flex">
+            <div class="droite">
+                <img src="images/mooii.png" class="rotation" alt="photo" />
+            </div>
+            <div class="gauche">
+                <p>
+                    Aenean turpis justo, iaculis vehicula fermentum commodo, tempor vitae magna. Curabitur sed leo
+                    convallis, egestas lacus in, vestibulum nunc. Donec cursus justo tristique, gravida enim ut, maximus
+                    lorem. Cras rhoncus felis dapibus dui vulputate, vitae placerat dolor iaculis. Nullam venenatis
+                    aliquam dolor, in cursus arcu pretium sit amet. Nam id volutpat purus. Morbi faucibus semper tellus
+                    vel vehicula. Phasellus nec tortor nisi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Projects -->
+    <section id="projects">
+        <div class="video-container">
+        <video autoplay muted loop class="videoprojet">
+            <source src="videos&fichiers/icebox.webm" type="video/webm" />
+        </video>
+    </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="infographie">Infographie</button>
+            <button class="filter-btn" data-filter="audiovisuel">Audiovisuel</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid">
+
+            <!-- Project Cards: Infographie -->
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Book Cover" />
+                <div class="project-text">
+                    <h3>Book Cover</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="infographie">
+                <img src="images/tentative felix.jpg" alt="Epiona" />
+                <div class="project-text">
+                    <h3>Epiona</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Chocolaterie" />
+                <div class="project-text">
+                    <h3>Chocolaterie</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+
+            <!-- Repeated Book Cover Projects (Infographie) -->
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Book Cover" />
+                <div class="project-text">
+                    <h3>Book Cover</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Book Cover" />
+                <div class="project-text">
+                    <h3>Book Cover</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Book Cover" />
+                <div class="project-text">
+                    <h3>Book Cover</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Book Cover" />
+                <div class="project-text">
+                    <h3>Book Cover</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Book Cover" />
+                <div class="project-text">
+                    <h3>Book Cover</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Book Cover" />
+                <div class="project-text">
+                    <h3>Book Cover</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Book Cover" />
+                <div class="project-text">
+                    <h3>Book Cover</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Book Cover" />
+                <div class="project-text">
+                    <h3>Book Cover</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="infographie">
+                <img src="images/felix.jpg" alt="Book Cover" />
+                <div class="project-text">
+                    <h3>Book Cover</h3>
+                    <p>Infographie</p>
+                </div>
+            </div>
+
+            <!-- Project Cards: Audiovisuel -->
+            <div class="project-card" data-category="audiovisuel">
+                <a href="marlow.html">
+                    <img src="images/filmnoir.png" alt="MedLea" />
+                </a>
+                <div class="project-text">
+                    <a href="marlow.html">
+                        <h3>Inspecteur Marlow</h3>
+                    </a>
+                    <p>Audiovisuel</p>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="audiovisuel">
+                <a href="autostop.html">
+                    <img src="images/covoit.png" alt="ImageFilmTonAction" />
+                </a>
+                <div class="project-text">
+                    <a href="autostop.html">
+                        <h3>L'autostoppeur</h3>
+                    </a>
+                    <p>Audiovisuel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Competences -->
+    <section id="competences">
+        <h1 class="compet">COMPETENCES</h1>
+
+        <div class="competencess">
+            <h1>Tout les logiciels acquis</h1>
+        </div>
+
+        <div class="carousel">
+            <div class="card" style="background: #181872;">
+                <img src="images/ae.png" alt="Luxora" />
+                <h3>After Effect</h3>
+                <p>Logiciel d’animation et d’effets visuels utilisé en motion design.</p>
+            </div>
+
+            <div class="card" style="background: #062b4e;">
+                <img src="images/ps.png" alt="Grandeur" />
+                <h3>Photoshop</h3>
+                <p>Logiciel de retouche et création graphique pour l’édition d’images.</p>
+            </div>
+
+            <div class="card" style="background: #491300;">
+                <img src="images/illustrator.png" alt="Prestigio" />
+                <h3>Illustrator</h3>
+                <p>Logiciel de dessin vectoriel idéal pour la création de logos et illustrations.</p>
+            </div>
+
+            <div class="card" style="background: #13136d;">
+                <img src="images/premierepro.png" alt="Elegance" />
+                <h3>Premiere Pro</h3>
+                <p>Logiciel de montage et d'animation</p>
+            </div>
+
+            <div class="card" style="background: #3e57a3;">
+                <img src="images/css.png" alt="logo du language css" />
+                <h3>CSS</h3>
+                <p>Langage de style qui permet de styliser et mettre en forme les pages web.</p>
+            </div>
+
+            <div class="card" style="background: #733e2c;">
+                <img src="images/HTML.png" alt="logo du language html" />
+                <h3>HTML</h3>
+                <p>Langage de balisage utilisé pour structurer le contenu des pages web.</p>
+            </div>
+
+            <div class="card" style="background: #3e321a;">
+                <img src="images/java.png" alt="logo du language javascript" />
+                <h3>Javascript</h3>
+                <p>Langage de programmation permettant d'ajouter de l'interactivité.</p>
+            </div>
+
+            <div class="card" style="background: #333239;">
+                <img src="images/figma.png" alt="logo du logiciel figma" />
+                <h3>Figma</h3>
+                <p>Outil de design collaboratif pour la création d’interfaces et de prototypes.</p>
+            </div>
+
+            <div class="card" style="background: #4b4d69;">
+                <img src="images/php.png" alt="Logo du language php" />
+                <h3>Php</h3>
+                <p>Langage côté serveur utilisé pour créer des sites dynamiques et interactifs.</p>
+            </div>
+
+            <div class="card" style="background: #073863;">
+                <img src="images/word.png" alt="Logo du logiciel word" />
+                <h3>Word</h3>
+                <p>Logiciel de traitement de texte utilisé pour rédiger, formater et éditer des documents.</p>
+            </div>
+
+            <div class="card" style="background: #3866b0;">
+                <img src="images/canva.webp" alt="logo du logiciel Canva" />
+                <h3>Canva</h3>
+                <p>Outil de conception graphique intuitif pour créer des visuels et présentations.</p>
+            </div>
+
+            <div class="card" style="background: #187a4a;">
+                <img src="images/exel.webp" alt="logo du logiciel excel" />
+                <h3>Excel</h3>
+                <p>Tableur puissant permettant d’analyser, calculer et visualiser des données.</p>
+            </div>
+
+            <div class="card" style="background: #000d1f;">
+                <img src="images/mysql.svg" alt="logo du language mysql" />
+                <h3>MySQL</h3>
+                <p>Tableur puissant permettant d’analyser, calculer et visualiser des données.</p>
+            </div>
+
+            <div class="card" style="background: #72491e;">
+                <img src="images/blender.png" alt="logo du logiciel blender" />
+                <h3>Blender</h3>
+                <p>Tableur puissant permettant d’analyser, calculer et visualiser des données.</p>
+            </div>
+
+            <div class="card" style="background: #615e55;">
+                <img src="images/gant.webp" alt="logo du logiciel gant" />
+                <h3>Gantt</h3>
+                <p>Tableur puissant permettant d’analyser, calculer et visualiser des données.</p>
+            </div>
+            <div class="card" style="background: #181872;">
+                <img src="images/ae.png" alt="Luxora" />
+                <h3>After Effect</h3>
+                <p>Logiciel d’animation et d’effets visuels utilisé en motion design.</p>
+            </div>
+
+            <div class="card" style="background: #062b4e;">
+                <img src="images/ps.png" alt="Grandeur" />
+                <h3>Photoshop</h3>
+                <p>Logiciel de retouche et création graphique pour l’édition d’images.</p>
+            </div>
+
+            <div class="card" style="background: #491300;">
+                <img src="images/illustrator.png" alt="Prestigio" />
+                <h3>Illustrator</h3>
+                <p>Logiciel de dessin vectoriel idéal pour la création de logos et illustrations.</p>
+            </div>
+
+            <div class="card" style="background: #13136d;">
+                <img src="images/premierepro.png" alt="Elegance" />
+                <h3>Premiere Pro</h3>
+                <p>Logiciel de montage et d'animation</p>
+            </div>
+
+            <div class="card" style="background: #3e57a3;">
+                <img src="images/css.png" alt="logo du language css" />
+                <h3>CSS</h3>
+                <p>Langage de style qui permet de styliser et mettre en forme les pages web.</p>
+            </div>
+
+            <div class="card" style="background: #733e2c;">
+                <img src="images/HTML.png" alt="logo du language html" />
+                <h3>HTML</h3>
+                <p>Langage de balisage utilisé pour structurer le contenu des pages web.</p>
+            </div>
+
+            <div class="card" style="background: #3e321a;">
+                <img src="images/java.png" alt="logo du language javascript" />
+                <h3>Javascript</h3>
+                <p>Langage de programmation permettant d'ajouter de l'interactivité.</p>
+            </div>
+
+            <div class="card" style="background: #333239;">
+                <img src="images/figma.png" alt="logo du logiciel figma" />
+                <h3>Figma</h3>
+                <p>Outil de design collaboratif pour la création d’interfaces et de prototypes.</p>
+            </div>
+
+            <div class="card" style="background: #4b4d69;">
+                <img src="images/php.png" alt="Logo du language php" />
+                <h3>Php</h3>
+                <p>Langage côté serveur utilisé pour créer des sites dynamiques et interactifs.</p>
+            </div>
+
+            <div class="card" style="background: #073863;">
+                <img src="images/word.png" alt="Logo du logiciel word" />
+                <h3>Word</h3>
+                <p>Logiciel de traitement de texte utilisé pour rédiger, formater et éditer des documents.</p>
+            </div>
+
+            <div class="card" style="background: #3866b0;">
+                <img src="images/canva.webp" alt="logo du logiciel Canva" />
+                <h3>Canva</h3>
+                <p>Outil de conception graphique intuitif pour créer des visuels et présentations.</p>
+            </div>
+
+            <div class="card" style="background: #187a4a;">
+                <img src="images/exel.webp" alt="logo du logiciel excel" />
+                <h3>Excel</h3>
+                <p>Tableur puissant permettant d’analyser, calculer et visualiser des données.</p>
+            </div>
+
+            <div class="card" style="background: #000d1f;">
+                <img src="images/mysql.svg" alt="logo du language mysql" />
+                <h3>MySQL</h3>
+                <p>Tableur puissant permettant d’analyser, calculer et visualiser des données.</p>
+            </div>
+
+            <div class="card" style="background: #72491e;">
+                <img src="images/blender.png" alt="logo du logiciel blender" />
+                <h3>Blender</h3>
+                <p>Tableur puissant permettant d’analyser, calculer et visualiser des données.</p>
+            </div>
+
+            <div class="card" style="background: #615e55;">
+                <img src="images/gant.webp" alt="logo du logiciel gant" />
+                <h3>Gantt</h3>
+                <p>Tableur puissant permettant d’analyser, calculer et visualiser des données.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="js.js"></script>
+</body>
+
+</html>
