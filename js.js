@@ -27,48 +27,43 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// carousel infini
-const carousel = document.querySelector('.carousel');
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.querySelector(".carousel");
 
-        function duplicateCards() {
-            const cards = [...carousel.children];
-            cards.forEach(card => {
-                const clone = card.cloneNode(true);
-                carousel.appendChild(clone);
-            });
-        }
+  // Clone les cartes pour un effet infini
+  function duplicateCards() {
+    const cards = [...carousel.children];
+    cards.forEach(card => {
+      const clone = card.cloneNode(true);
+      carousel.appendChild(clone);
+    });
+  }
 
-        function startInfiniteScroll() {
-            let position = 0;
-            const speed = 2; // Plus grand = plus rapide
-            function scroll() {
-                position -= speed;
-                if (Math.abs(position) >= carousel.scrollWidth / 2) {
-                    position = 0; // Reset propre pour un effet infini
-                }
-                carousel.style.transform = `translateX(${position}px)`;
-                requestAnimationFrame(scroll);
-            }
-            scroll();
-        }
+  duplicateCards();
 
-        duplicateCards();
+  let position = 0;
+  const speed = 1.5; // ajustable
+  let animationId;
 
-        sliderElement.addEventListener('mouseenter', () => {
-            clearInterval(slideInterval);
-        });
-        sliderElement.addEventListener('mouseleave', () => {
-            slideInterval = setInterval(moveToNextSlide, 1000);
-        });
+  function scroll() {
+    position -= speed;
+    if (Math.abs(position) >= carousel.scrollWidth / 2) {
+      position = 0; // Remise à zéro pour boucler
+    }
+    carousel.style.transform = `translateX(${position}px)`;
+    animationId = requestAnimationFrame(scroll);
+  }
 
+  scroll(); // démarrer l'animation
 
-
-
-        
-        // Filtrer les projets
-
-        //responsive 
-  document.querySelector(".menu-toggle").addEventListener("click", () => {
-  document.querySelector(".right").classList.toggle("open");
+  // Pause au survol
+  carousel.addEventListener("mouseenter", () => {
+    cancelAnimationFrame(animationId);
   });
+
+  carousel.addEventListener("mouseleave", () => {
+    scroll();
+  });
+});
+
 

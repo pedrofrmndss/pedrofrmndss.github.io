@@ -63,6 +63,18 @@ h1{
     box-shadow:  0 20px 40px rgba(0, 0, 0, 0.3);
     animation-name: opacite;
 }
+.imgprinc img{
+    
+    position: absolute;
+    width: 560px;
+    height: 315px;
+    top: 280px;
+    left:250px;
+    animation-duration: 2s;
+    box-shadow:  0 20px 40px rgba(0, 0, 0, 0.3);
+    animation-name: opacite;
+}
+
 @keyframes opacite{
     0% {
         opacity: 0%;
@@ -92,7 +104,7 @@ p{
     font-size: 25px;
     margin-right: 25px;
     font-family: asimilate;
-    top:530px;
+    top:580px;
     color:white;
     font-style: italic;
     animation-duration: 3s;
@@ -114,7 +126,7 @@ p{
 @keyframes opacitetexte2{
     0% {
         opacity: 0%;
-        top: 530px;
+        top: 580px;
         left: 1920px;
     }
     75%{
@@ -122,14 +134,14 @@ p{
     }
     100%{
         opacity: 100%;
-        top: 530px;
+        top: 580px;
         left: 950px;
     }
 }
 @keyframes opacitetexte3{
     0% {
         opacity: 0%;
-        top: 580px;
+        top: 630px;
         left: 1920px;
     }
     75%{
@@ -137,14 +149,59 @@ p{
     }
     100%{
         opacity: 100%;
-        top: 580px;
+        top: 630px;
         left: 950px;
     }
 }
-@keyframes opaciteimg{
+@keyframes opaciteimgpp{
     0% {
         opacity: 0%;
-        top: 565px;
+        top: 615px;
+        left: 1650px;
+    }
+
+    75%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 615px;
+        left: 1650px;
+    }
+}
+h2{
+    position: absolute;
+    left:950px;
+    top: 630px;
+    color:white;
+    font-style: italic;
+    animation-duration: 3.5s;
+    animation-name: opacitetexte3;
+
+}
+.imagepp  img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:1650px;
+    top:615px;
+    animation-duration: 5s;
+    animation-name: opaciteimgpp;
+  }
+.imagegant  img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:1350px;
+    top:615px;
+    animation-duration: 5s;
+    animation-name: opaciteimggant;
+  }
+  @keyframes opaciteimggant{
+    0% {
+        opacity: 0%;
+        top: 615px;
         left: 1350px;
     }
 
@@ -154,29 +211,37 @@ p{
 
     100%{
         opacity: 100%;
-        top: 565px;
+        top: 615px;
         left: 1350px;
     }
 }
-h2{
-    position: absolute;
-    left:950px;
-    top: 580px;
-    color:white;
-    font-style: italic;
-    animation-duration: 3.5s;
-    animation-name: opacitetexte3;
 
-}
-img  {
+.imageill  img{
     position: absolute;
     width: 50px;
     height: 50px;
-    left:1350px;
-    top:565px;
+    left:1420px;
+    top:615px;
     animation-duration: 5s;
-    animation-name: opaciteimg;
+    animation-name: opaciteimgill;
   }
+  @keyframes opaciteimgill{
+    0% {
+        opacity: 0%;
+        top: 615px;
+        left: 1420px;
+    }
+
+    75%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 615px;
+        left: 1420px;
+    }
+}
 a h6{
     position: absolute;
     left:50%;
@@ -208,6 +273,87 @@ a h6{
         transform: translateX(-50%);
     }
 }
+.imagehtml img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:1370px;
+    top:615px;
+    animation-duration: 5s;
+    animation-name: opaciteimghtml;
+
+}
+@keyframes opaciteimghtml{
+    0% {
+        opacity: 0%;
+        top: 615px;
+        left: 1370px;
+    }
+
+    75%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 615px;
+        left: 1370px;
+    }
+}
+.imagephp img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:1440px;
+    top:615px;
+    animation-duration: 5s;
+    animation-name: opaciteimgphp;
+
+}
+@keyframes opaciteimgphp{
+    0% {
+        opacity: 0%;
+        top: 615px;
+        left: 1440px;
+    }
+
+    75%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 615px;
+        left: 1440px;
+    }
+}
+.imagesql img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left:1510px;
+    top:615px;
+    animation-duration: 5s;
+    animation-name: opaciteimgsql;
+
+}
+@keyframes opaciteimgsql{
+    0% {
+        opacity: 0%;
+        top: 615px;
+        left: 1510px;
+    }
+
+    75%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        top: 615px;
+        left: 1510px;
+    }
+}
 .mon-role {
   position: absolute;
   top: 880px;
@@ -231,20 +377,18 @@ a h6{
 
 .galerie-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  width: 700px; /* largeur contrôlée */
-  margin-left: 150px; /* décale la grille vers la gauche */
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  justify-content: start; /* aligne vers la gauche */
+  max-width: 500px; /* largeur max du bloc, adapte selon besoin */
 }
 
-
 .galerie-images img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  aspect-ratio: 16 / 9; /* Ajuste ici le format si besoin, ex: 4/3, 1/1... */
-  border-radius: 8px; /* optionnel pour adoucir les bords */
+  width: 100%;      /* occupe toute la largeur de la case */
+  height: auto;     /* conserve ratio */
+  object-fit: contain; /* pas de découpage, image complète visible */
+  border-radius: 5px; /* optionnel, pour un petit arrondi */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* optionnel */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

@@ -485,26 +485,24 @@ a h6{
 
 .galerie-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  width: 700px; /* largeur contrôlée */
-  margin-left: 150px; /* décale la grille vers la gauche */
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  justify-content: start; /* aligne vers la gauche */
+  max-width: 500px; /* largeur max du bloc, adapte selon besoin */
 }
 
-
 .galerie-images img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  aspect-ratio: 16 / 9; /* Ajuste ici le format si besoin, ex: 4/3, 1/1... */
-  border-radius: 8px; /* optionnel pour adoucir les bords */
+  width: 100%;      /* occupe toute la largeur de la case */
+  height: auto;     /* conserve ratio */
+  object-fit: contain; /* pas de découpage, image complète visible */
+  border-radius: 5px; /* optionnel, pour un petit arrondi */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* optionnel */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
 .galerie-images img:hover {
-  transform: scale(2.05);
+  transform: scale(1.50);
 }
 
 @keyframes apparition {
