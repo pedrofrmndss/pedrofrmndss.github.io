@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Au Bon Accueil — Buffet asiatique à volonté</title>
+  <meta name="description" content="Au Bon Accueil à 125 avenue Jean Jaurès, 76140 Le Petit-Quevilly. Buffet asiatique à volonté, wok & grill, sushis, desserts.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/TextPlugin.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollToPlugin.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <button class="menu-toggle" aria-label="Menu mobile">☰</button>
+    <nav class="nav">
+      <a href="#about">À propos</a>
+      <a href="#buffet">Buffet</a>
+      <a href="#gallery">Galerie</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" aria-label="Héro">
+  <img class="hero-bg" src="images/unnamed (5).webp" alt="Visuel du restaurant et buffet"/>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <img class="hero-logo" src="images/logo chinois.svg" alt="Logo Au Bon Accueil"/>
+    <h1 class="headline">Buffet asiatique à volonté</h1>
+    <p class="subline">Chinois • Japonais | Wok • Sushis • Buffet chaud • Desserts</p>
+    <div class="hero-cta">
+      <a href="#buffet" class="btn primary">Découvrir le buffet</a>
+      <a href="tel:0235039972" class="btn ghost">Appeler 02 35 03 99 72</a>
+    </div>
+    <div class="chips">
+      <span>À emporter</span>
+      <span>Accès PMR</span>
+      <span>Climatisation</span>
+      <span>Parking</span>
+    </div>
+  </div>
+  <a class="floating-badge" href="#hours">Ouvert maintenant</a>
+  <div class="scroll-indicator"><span>Faire défiler</span><div class="scroll-arrow"></div></div>
+</section>
+
+<section id="about" class="section about">
+  <div class="content">
+    <h2>Bienvenue chez Au Bon Accueil</h2>
+    <p>Situé au <strong>125 avenue Jean Jaurès, 76140 Le Petit-Quevilly</strong>, Au Bon Accueil vous propose un <strong>buffet à volonté</strong> mêlant les saveurs <em>chinoises, japonaises et thaïlandaises</em>.</p>
+    <ul class="badges">
+      <li>Sans réservation — venez quand vous voulez</li>
+      <li>Options à emporter disponibles</li>
+      <li>Convient aux personnes à mobilité réduite</li>
+    </ul>
+  </div>
+  <div class="about-card">
+    <div class="about-card-inner horaires-card">
+      <h3>Horaires d’ouverture</h3>
+      <ul class="hours-list">
+        <li><span>Lundi</span><span class="closed">Fermé</span></li>
+        <li><span>Mardi</span><span>12:00–14:00 / 19:00–22:00</span></li>
+        <li><span>Mercredi</span><span>12:00–14:00 / 19:00–22:00</span></li>
+        <li><span>Jeudi</span><span>12:00–14:00 / 19:00–22:00</span></li>
+        <li><span>Vendredi</span><span>12:00–14:00 / 19:00–22:30</span></li>
+        <li><span>Samedi</span><span>12:00–14:00 / 19:00–22:30</span></li>
+        <li><span>Dimanche</span><span>12:00–14:00 / 19:00–22:00</span></li>
+      </ul>
+      <p class="note">* Horaires susceptibles de varier les jours fériés.</p>
+    </div>
+  </div>
+</section>
+
+<section id="buffet" class="section buffet">
+  <div class="buffet-layout">
+    <div class="buffet-left">
+      <h2>Buffet à volonté, Wok & Grill</h2>
+      <p class="lead">Composez votre assiette, confiez-la au chef wok, et terminez par une douceur.</p>
+      <div class="features">
+        <article class="feature"><h3>Sushis & Makis</h3><p>Un assortiment renouvelé préparé tout au long du service.</p></article>
+        <article class="feature"><h3>Wok personnalisé</h3><p>Choisissez vos ingrédients et sauces, cuisinés à la minute.</p></article>
+        <article class="feature"><h3>Plats chauds</h3><p>Classiques chinois et spécialités asiatiques variées.</p></article>
+        <article class="feature"><h3>Desserts & fruits</h3><p>Buffet sucré et fruits frais pour finir en beauté.</p></article>
+      </div>
+    </div>
+    <div class="buffet-video"><video src="images/wokvideo4k.mp4" autoplay muted loop playsinline></video></div>
+  </div>
+</section>
+
+<section id="gallery" class="section gallery">
+  <h2>Galerie d'images</h2>
+  <div class="gallery-controls">
+    <button class="gallery-prev">←</button>
+    <button class="gallery-next">→</button>
+  </div>
+  <div class="masonry">
+    <img src="images/unnamed (1).webp" alt="Salle et buffet">
+    <img src="images/unnamed (2).webp" alt="Wok et grill">
+    <img src="images/unnamed (3).webp" alt="Sushis">
+    <img src="images/unnamed (6).webp" alt="Desserts">
+    <img src="images/unnamed (7).webp" alt="Cocktails">
+    <img src="images/unnamed (8).webp" alt="Ambiance">
+    <img src="images/unnamed (9).webp" alt="Ambiance">
+    <img src="images/unnamed (10).webp" alt="Ambiance">
+    <img src="images/unnamed (11).webp" alt="Ambiance">
+    <img src="images/unnamed.webp" alt="Ambiance">
+  </div>
+</section>
+
+<section id="services" class="section services">
+  <h2>Services</h2>
+  <div class="carousel infinite">
+    <div class="carousel-track">
+      <span>Événements privés</span><span>Récéption de mariage</span><span>À emporter</span><span>Climatisation</span><span>Accès PMR</span><span>Parking gratuit</span>
+    </div>
+  </div>
+  <h3 class="mt">Moyens de paiement</h3>
+  <div class="carousel infinite slow">
+    <div class="carousel-track">
+      <span>Espèces</span><span>Carte Bleue</span><span>VISA</span><span>MasterCard</span><span>Ticket Restaurant®</span><span>Chèques Vacances</span><span>Sans contact</span><span>Apple Pay</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="contact-card">
+    <h2>Nous contacter</h2>
+    <p><strong>Adresse :</strong> 125 avenue Jean Jaurès, 76140 Le Petit-Quevilly</p>
+    <p><strong>Téléphone :</strong> <a href="tel:0235039972">02 35 03 99 72</a></p>
+    <p><strong>Sans réservation :</strong> Présentez-vous directement sur place.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="tel:0235039972">Appeler maintenant</a>
+      <a class="btn ghost" target="_blank" href="https://maps.google.com/?q=125%20avenue%20Jean%20Jaur%C3%A8s,%2076140%20Le%20Petit-Quevilly">Voir sur Maps</a>
+    </div>
+  </div>
+  <div class="map-embed"><iframe loading="lazy" src="https://maps.google.com/maps?q=125%20avenue%20Jean%20Jaur%C3%A8s,%2076140%20Le%20Petit-Quevilly&z=15&output=embed"></iframe></div>
+</section>
+
+<footer class="site-footer glassy">
+  <div class="footer-inner">
+    <p class="footer-copy"><span id="year"></span> Au Bon Accueil.</p>
+    <p class="footer-copy">© <span id="year"></span> Firmino Pedro - Tous droits réservés.</p>
+  </div>
+</footer>
+
+<div class="cursor"></div>
+
+</body>
+</html>
