@@ -893,3 +893,9 @@ body > * {
   will-change: transform;
   transform-origin: center center !important;
 }
+
+.about .lead {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
