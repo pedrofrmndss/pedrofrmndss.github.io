@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', () => {
     header.classList.toggle('scrolled', scrollY > 300);
   });
 
-  document.querySelectorAll('.nav a[href^="#"]').forEach(link => {
+  document.querySelectorAll('.nav a[href^="#"] , .hero-cta a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
       const target = document.querySelector(link.getAttribute('href'));
