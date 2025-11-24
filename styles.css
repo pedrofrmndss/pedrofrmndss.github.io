@@ -884,6 +884,11 @@ body > * {
     display: none !important;
   }
 }
+@media (max-width: 978) {
+  .buffet-video {
+    display: none !important;
+  }
+}
 /* Sur tablettes/mobiles (écran tactile), on évite le height:88vh qui casse la mise en page */
 @media (hover: none) and (pointer: coarse) {
   .hero {
