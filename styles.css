@@ -877,7 +877,7 @@ body > * {
 }
 /* Cache l’indicateur de scroll sur tous les appareils tactiles (mobiles + tablettes) */
 @media (hover: none) and (pointer: coarse) {
-  .scroll-indicator {
+  .scroll-indicator, .cursor {
     display: none !important;
   }
   .buffet-video {
