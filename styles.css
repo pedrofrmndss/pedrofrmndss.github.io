@@ -880,9 +880,6 @@ body > * {
   .scroll-indicator, .cursor {
     display: none !important;
   }
-  .buffet-video {
-    display: none !important;
-  }
 }
 @media (max-width: 978) {
   .buffet-video {
