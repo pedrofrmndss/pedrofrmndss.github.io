@@ -862,24 +862,6 @@ body > * {
 }
 
 
-/* --- Supprime l’indicateur de scroll et la vidéo sous 978px --- */
-@media (max-width: 978px) {
-  /* 1️⃣ Cache l’animation de scroll dans le hero */
-  .scroll-indicator {
-    display: none !important;
-  }
-
-  /* 2️⃣ Cache la vidéo du buffet */
-  .buffet-video {
-    display: none !important;
-  }
-}
-@media (max-width: 1022px) {
-  /* 1️⃣ Cache l’animation de scroll dans le hero */
-  .scroll-indicator {
-    display: none !important;
-  }
-}
 
 /* --- Corrige le centrage de l’indicateur de scroll --- */
 .scroll-indicator {
@@ -893,6 +875,24 @@ body > * {
   will-change: transform;
   transform-origin: center center !important;
 }
+/* Cache l’indicateur de scroll sur tous les appareils tactiles (mobiles + tablettes) */
+@media (hover: none) and (pointer: coarse) {
+  .scroll-indicator {
+    display: none !important;
+  }
+  .buffet-video {
+    display: none !important;
+  }
+}
+/* Sur tablettes/mobiles (écran tactile), on évite le height:88vh qui casse la mise en page */
+@media (hover: none) and (pointer: coarse) {
+  .hero {
+    height: auto;
+    min-height: 80vh;      /* garde une grande zone, mais plus flexible */
+    padding: 100px 16px 80px;
+  }
+}
+
 
 .about .lead {
   font-size: 1.05rem;
